@@ -17,11 +17,12 @@ AI Takım 38
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
 
 ## Ürün Açıklaması
-PharmAI, ilaçlar hakkındaki genel bilgiler, dozaj, yan etkiler ve etkileşimleri akıllı önerilerle sunan, yapay zeka destekli modern bir ilaç bilgi platformudur.
+PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri akıllı önerilerle sunan, yapay zeka destekli modern bir ilaç bilgi platformudur.
 
 ## Ürün Özellikleri
 - İlaç bilgilerini özetleyen yapay zeka motoru
 - İlaç etkileşim mekanizması
+- İlaç karşılaştırma sistemi
 - Üyelik sistemi ve kişiselleştirme
 
 ## Hedef Kitle
@@ -77,6 +78,56 @@ Sprint Board Screenshot:
 
 - Ürün geliştirme sürecinde daha fazla ilerleme kaydedebilmek için ekip içi iş bölümü ve hız konusunda iyileştirme kararı alındı.
 
-- Ürün geliştirme aşamasında kullanılan teknolojilerin gözden geçirilmesi sonucunda, belirli teknolojilerde değişiklik yapılması gerektiği değerlendirilerek bu konuda adım atılması kararlaştırıldı.
+- Ürün geliştirme aşamasın
+da kullanılan teknolojilerin gözden geçirilmesi sonucunda, belirli teknolojilerde değişiklik yapılması gerektiği değerlendirilerek bu konuda adım atılması kararlaştırıldı.
  
 ---
+
+# Sprint 2
+
+- **Sprint Notları**: Bu sprint kapsamında ağırlıklı olarak ürün geliştirme sürecine odaklanılmıştır. Takım, ürün üzerinde birçok geliştirme tamamladı.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 120 Puan
+
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken toplam 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde ikinci sprintin 120 puandan oluşması gerektiği kararlaştırıldı.
+
+- **Daily Scrum**: Daily Scrum toplantıları müsaitlik durumuna göre Google Meet veya WhatsApp üzerinden yapılmaya devam edildi.
+
+- **Sprint Board Update**:
+
+Sprint Board ve Product Screenshots: 
+
+![Backlog 2](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint2/Sprint%202%20-%20Sprint%20Board%20-%20Notion.png?raw=true)
+
+![Backlog 3](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint2/%C3%9Cr%C3%BCn%20Foto%201.png?raw=true)
+
+![Backlog 4](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint2/%C3%9Cr%C3%BCn%20Foto%202.png?raw=true)
+
+![Backlog 5](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint2/%C3%9Cr%C3%BCn%20Foto%203.png?raw=true)
+
+
+- **Sprint Review:**
+
+- Ürünün ana iskeleti tamamlandı.
+
+- Ürünün sahip olması gereken temel özellikler tamamlandı.
+
+- Frontend tasarımı oluşturuldu.
+
+- Sprint Review Katılımcıları:
+
+  Ahmet Melih Çalış
+
+  Melike Atila
+
+  Cansu Ceylan
+
+  Kaan Bilirgen
+
+- **Sprint Retrospective:**
+
+- Yapay zeka motorundaki eksikler tespit edildi, iyileştirme süreci için bir yol haritası belirlendi ve yapay zeka motoru geliştirme çalışmalarına devam edilmesi kararı verildi.
+
+- Ürün detaylarındaki eksiklerin giderilmesi ve veri setiyle ilgili sorunların çözülmesi hedeflendi.
+
+- Profil sayfası ile kayıt/giriş entegrasyonu üzerine çalışmaların sürdürülmesi planlandı
