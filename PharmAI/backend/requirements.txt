@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pandas
+python-dotenv
+google-generativeai
+sqlalchemy
+requests
+passlib[bcrypt]
+python-jose[cryptography]

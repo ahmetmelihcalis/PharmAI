@@ -1,0 +1,46 @@
+.disclaimer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.disclaimer-content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.disclaimer-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.disclaimer-content .final-warning {
+    font-weight: 600;
+    color: var(--danger-color);
+    background-color: #ff3b301a;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.disclaimer-content .home-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.disclaimer-content .home-button:hover {
+    background-color: var(--primary-hover);
+}

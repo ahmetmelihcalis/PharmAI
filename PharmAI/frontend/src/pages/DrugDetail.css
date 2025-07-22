@@ -1,0 +1,40 @@
+.drug-title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.favorite-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.favorite-button:disabled,
+.favorite-button.favorited {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    cursor: default;
+}
+
+.translate-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #6c757d;
+    background: transparent;
+    color: #6c757d;
+    border-radius: 5px;
+    cursor: pointer;
+}

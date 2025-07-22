@@ -1,0 +1,198 @@
+/* ANA SAYFA ÜST BÖLÜM (HERO) */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem 4rem 1rem; /* Alttaki boşluğu biraz artırdık */
+  background-color: var(--card-background);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+/* ANA SAYFA ARAMA MOTORU */
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+}
+
+.hero-search-form {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 50px; /* Hap şeklinde tasarım */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+.hero-search-form:focus-within {
+  box-shadow: 0 4px 15px rgba(217, 43, 43, 0.2); /* Odaklandığında kırmızı bir parlama efekti */
+  border-color: rgba(217, 43, 43, 0.3);
+}
+
+.hero-search-form input {
+  flex-grow: 1;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  outline: none;
+  background: none;
+}
+
+.hero-search-form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.hero-search-form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.search-suggestions {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 16px 16px; /* Daha yuvarlak köşeler */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 10;
+  overflow: hidden;
+  padding: 0;
+  margin-top: -2px;
+}
+
+.search-suggestions li {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: left;
+}
+.search-suggestions li:hover {
+  background-color: #f5f5f5;
+}
+
+/* TAB MENÜSÜ */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.tab-button {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-light);
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(2px);
+}
+.tab-button:hover {
+  color: var(--text-color);
+}
+.tab-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+/* İLAÇ LİSTESİ BÖLÜMÜ */
+.drug-list-section {
+  margin-bottom: 3rem;
+}
+
+.drug-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* İLAÇ KARTI */
+.drug-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.drug-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.drug-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drug-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.drug-card-rating .star {
+  color: #FFC700;
+  font-size: 1.2rem;
+}
+
+.drug-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* İSKELET YÜKLEME ANİMASYONU */
+.skeleton-card {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.skeleton-text {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-title {
+  height: 24px;
+  width: 80%;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton-rating {
+  height: 20px;
+  width: 40%;
+  margin-bottom: 1.25rem;
+}
+
+.skeleton-info {
+  height: 16px;
+  width: 60%;
+}
+
+@keyframes pulse {
+  0% { background-color: #e0e0e0; }
+  50% { background-color: #f0f0f0; }
+  100% { background-color: #e0e0e0; }
+}

@@ -1,0 +1,65 @@
+.compare-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.selection-area {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.selection-area select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.selection-area button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selection-area button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.results-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+}

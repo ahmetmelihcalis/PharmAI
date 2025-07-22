@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.idea/
+.vscode/
+.env
+pharmAI.db
+pharmAI.db-journal
+pharmAI.db-shm
+pharmAI.db-wal
+processed_drug_data.tsv
+

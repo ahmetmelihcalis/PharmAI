@@ -1,0 +1,6 @@
+# İşletim sistemi tarafından oluşturulan gereksiz dosyalar
+.DS_Store
+Thumbs.db
+
+# VS Code gibi editörlerin ayar dosyaları
+.vscode/
