@@ -1,0 +1,1026 @@
+/* ===== MODERN ANA SAYFA TASARIMI - KIRMIZI BEYAZ TEMA ===== */
+
+/* Yapay Zeka Özet Bölümü Stili */
+.ai-summary {
+  background: rgba(255, 235, 235, 0.8);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(217, 43, 43, 0.1);
+  margin-bottom: 2rem;
+}
+
+.ai-summary h2 {
+  color: #D92B2B;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.summary-section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+
+.summary-section h3 {
+  font-size: 1.1rem;
+  color: #B52323;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.summary-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-section li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.summary-section li::before {
+  content: "•";
+  color: #D92B2B;
+}
+
+/* HERO SECTION - ÇOK ŞIK VE MODERN */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 2rem 1rem 3rem 1rem;
+  background: white;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.page-title {
+  background: #D92B2B;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+.search-container {
+  position: relative;
+  z-index: 1000;
+  max-width: 584px;
+  margin: 0 auto;
+}
+
+.hero-search-form {
+  position: relative;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+  position: relative;
+  margin: 1rem auto;
+  padding: 0 8px;
+  transition: all 0.2s ease;
+}
+
+.search-suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1001;
+}
+
+.search-input-wrapper:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-input-wrapper:focus-within {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #D92B2B, #FF6B6B, #D92B2B);
+  border-radius: 24px 24px 0 0;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  background: #fff;
+  border-radius: 32px;
+  padding: 0.8rem 0.5rem;
+  box-shadow: 0 8px 32px rgba(217,43,43,0.08);
+  border: 2px solid #D92B2B;
+  position: relative;
+  overflow: visible;
+}
+.tab-button {
+  padding: 1.1rem 2.2rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #D92B2B;
+  background: #fff;
+  border: 2px solid #D92B2B;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(217,43,43,0.04);
+}
+.tab-button.active {
+  color: #fff !important;
+  background: linear-gradient(90deg, #D92B2B 60%, #FF6B6B 100%) !important;
+  border: 2px solid #D92B2B !important;
+  box-shadow: 0 4px 16px rgba(217,43,43,0.10);
+}
+.tab-button:hover {
+  background: #fff5f5;
+  color: #B52323;
+  border-color: #B52323;
+}
+
+/* ARAMA MOTORU - GOOGLE STYLE */
+.search-container {
+  position: relative;
+  max-width: 584px;
+  margin: 20px auto;
+}
+
+.hero-search-form {
+  display: flex;
+  background: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hero-search-form input {
+  flex: 1;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 16px;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  padding: 1.25rem 2rem;
+  font-size: 1.1rem;
+  outline: none;
+  background: white;
+  color: #1a1a1a;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-search-form input::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+.hero-search-form button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+  height: 44px;
+  color: #9aa0a6;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ARAMA ÖNERİLERİ - GOOGLE STYLE */
+.search-suggestions {
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(32,33,36,0.28);
+  border-radius: 0 0 24px 24px;
+  border-top: 1px solid #dfe1e5;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-suggestions li {
+  padding: 12px 16px 12px 16px;
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.58;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-suggestions li:hover {
+  background-color: #f8f9fa;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-suggestions li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+  color: #2c3e50;
+  font-size: 0.9375rem;
+}
+
+.search-suggestions li:last-child {
+  border-bottom: none;
+}
+
+.search-suggestions li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #D92B2B;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.search-suggestions li:hover::before {
+  transform: scaleY(1);
+}
+
+.search-suggestions li:hover {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffeaea 100%);
+  color: #D92B2B;
+  transform: translateX(8px);
+}
+
+/* TAB MENÜSÜ - MODERN VE DİNAMİK */
+.filter-tabs {
+  margin: 3rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-tab-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  min-width: max-content;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(217, 43, 43, 0.08);
+  border: 1px solid rgba(217, 43, 43, 0.1);
+  position: relative;
+}
+
+.filter-tab-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #D92B2B, #FF6B6B, #D92B2B);
+  border-radius: 20px 20px 0 0;
+}
+
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: none;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  white-space: nowrap;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.tab-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #D92B2B, #FF6B6B);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.filter-tab:hover {
+  background: rgba(217, 43, 43, 0.05);
+  transform: translateY(-2px);
+}
+
+.filter-tab:hover .tab-icon {
+  transform: scale(1.2);
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, #D92B2B 0%, #B52323 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(217, 43, 43, 0.2);
+}
+
+.tab-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.tab-button.active::before {
+  opacity: 1;
+}
+
+/* İLAÇ KARTI GRİDİ - MODERN LAYOUT */
+.drug-list-section {
+  margin-bottom: 4rem;
+}
+
+.drug-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* İLAÇ KARTLARI - PREMIUM TASARIM */
+.drug-card {
+  background: white;
+  border: 1px solid rgba(217, 43, 43, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.drug-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #D92B2B, #FF6B6B, #D92B2B);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 20px 20px 0 0;
+}
+
+.drug-card::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(217, 43, 43, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.drug-card:hover::before {
+  transform: scaleX(1);
+}
+
+.drug-card:hover::after {
+  opacity: 1;
+}
+
+.drug-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(217, 43, 43, 0.15);
+  border-color: rgba(217, 43, 43, 0.2);
+}
+
+.drug-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  line-height: 1.3;
+  position: relative;
+  z-index: 2;
+}
+
+.drug-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.drug-card-rating .star {
+  color: #FFC700;
+  font-size: 1.4rem;
+  filter: drop-shadow(0 2px 4px rgba(255, 199, 0, 0.3));
+}
+
+.drug-card-rating strong {
+  color: #D92B2B;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.drug-card p {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.5;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+/* SKELETON LOADING - MODERN ANIMATIONS */
+.skeleton-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.skeleton-text {
+  background: linear-gradient(90deg, #e9ecef 25%, #f8f9fa 50%, #e9ecef 75%);
+  background-size: 200% 100%;
+  border-radius: 8px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton-title {
+  height: 28px;
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
+.skeleton-rating {
+  height: 24px;
+  width: 45%;
+  margin-bottom: 1.2rem;
+}
+
+.skeleton-info {
+  height: 20px;
+  width: 65%;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: -200% 0;
+  }
+}
+
+/* GÜNÜN SAĞLIK İPUCU - KIRMIZI BEYAZ MODERN TEMA */
+.health-tip-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 420px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(217,43,43,0.08);
+  border: 1.5px solid #D92B2B;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.health-tip-section h3 {
+  color: #D92B2B;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.health-tip {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: #D92B2B;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(217,43,43,0.08);
+  border: 1px solid #FFD6D6;
+  justify-content: center;
+}
+
+.health-tip .tip-icon {
+  font-size: 2.1rem;
+  color: #D92B2B;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(217,43,43,0.08);
+  padding: 0.3rem;
+}
+
+.health-tip .tip-content {
+  text-align: left;
+}
+
+.health-tip .tip-content p {
+  font-size: 1.08rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.health-tip .tip-category {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #fff;
+  background: linear-gradient(90deg, #D92B2B 60%, #FF6B6B 100%);
+  border-radius: 8px;
+  padding: 0.18rem 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 1px 6px rgba(217,43,43,0.08);
+  margin-top: 0.1rem;
+}
+@media (max-width: 1024px) {
+  .drug-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1.5rem 4rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+  }
+  
+  .page-description {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  .hero-search-form {
+    border-radius: 50px;
+  }
+  
+  .hero-search-form input {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .hero-search-form button {
+    padding: 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .tabs-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-button {
+    flex: 1;
+    min-width: auto;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .drug-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .drug-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2rem 1rem 3rem 1rem;
+    border-radius: 16px;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .page-description {
+    font-size: 1rem;
+  }
+  
+  .search-container {
+    max-width: 100%;
+  }
+  
+  .tabs-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tab-button {
+    width: 100%;
+  }
+}
+
+/* ACCESSIBILITY IMPROVEMENTS */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.drug-card:focus-visible,
+.tab-button:focus-visible,
+.hero-search-form button:focus-visible {
+  outline: 2px solid #D92B2B;
+  outline-offset: 2px;
+}
+
+/* FORCED LIGHT MODE FOR HERO SECTION - ALWAYS READABLE */
+@media (prefers-color-scheme: dark) {
+  .hero-section {
+    background: white !important;
+    color: #1a1a1a !important;
+  }
+  
+  .page-title {
+    color: #1a1a1a !important;
+    background: linear-gradient(135deg, #1a1a1a 0%, #D92B2B 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  .page-description {
+    color: #444 !important;
+  }
+}
+
+/* ===== SAĞLIK İPUCU BÖLÜMÜ ===== */
+.health-tip-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.health-tip-section h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.health-tip {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f9ff 100%);
+  border: 1px solid #ff3b301a(0, 122, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.health-tip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff3b301a, #ff3b301a, #ff3b301a);
+  border-radius: 16px 16px 0 0;
+}
+
+.health-tip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px #a008009d(0, 122, 255, 0.15);
+}
+
+.tip-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px #9f0800c4(0, 0, 0, 0.1));
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.tip-content {
+  flex: 1;
+  text-align: left;
+}
+
+.tip-content p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.tip-category {
+  background: linear-gradient(135deg, #ff3b301a 0%, #ff3b301a 100%);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* ===== GELİŞTİRİLMİŞ İLAÇ KARTLARI ===== */
+.drug-card {
+  background: white;
+  border: 1px solid rgba(217, 43, 43, 0.08);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.drug-card.highlighted {
+  border-color: rgba(217, 43, 43, 0.3);
+  box-shadow: 0 8px 32px rgba(217, 43, 43, 0.12);
+}
+
+.drug-card.highlighted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #a50000, #be0000, #D92B2B);
+  border-radius: 20px 20px 0 0;
+}
+
+.drug-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(217, 43, 43, 0.15);
+  border-color: rgba(217, 43, 43, 0.2);
+}
+
+.drug-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.drug-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0;
+  flex: 1;
+}
+
+.highlight-badge {
+  background: linear-gradient(135deg, #FF6B6B 0%, #D92B2B 100%);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(217, 43, 43, 0.3);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 2px 8px rgba(217, 43, 43, 0.3); }
+  to { box-shadow: 0 4px 16px rgba(217, 43, 43, 0.5); }
+}
+
+.drug-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.drug-card-rating .star {
+  color: #FFC700;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 2px 4px rgba(255, 199, 0, 0.3));
+}
+
+.drug-card-rating strong {
+  color: #D92B2B;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.rating-max {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.drug-info {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.drug-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f3f4;
+}
+
+.view-details {
+  color: #D92B2B;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.drug-card:hover .view-details {
+  transform: translateX(5px);
+}
+
+/* ===== RESPONSIVE GÜNCELLEMELER ===== */
+@media (max-width: 768px) {
+  .health-tip {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+  
+  .tip-content {
+    text-align: center;
+  }
+  
+  .drug-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .highlight-badge {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-tip {
+    padding: 1rem;
+  }
+  
+  .tip-icon {
+    font-size: 2rem;
+  }
+  
+  .tip-content p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== ANİMASYON GELİŞTİRİLMELERİ ===== */
+.drug-card-grid .drug-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.drug-card-grid .drug-card:nth-child(1) { animation-delay: 0.1s; }
+.drug-card-grid .drug-card:nth-child(2) { animation-delay: 0.2s; }
+.drug-card-grid .drug-card:nth-child(3) { animation-delay: 0.3s; }
+.drug-card-grid .drug-card:nth-child(4) { animation-delay: 0.4s; }
+.drug-card-grid .drug-card:nth-child(5) { animation-delay: 0.5s; }
+.drug-card-grid .drug-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

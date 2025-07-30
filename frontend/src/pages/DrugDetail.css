@@ -1,0 +1,422 @@
+.drug-title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.favorite-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #d32f2f;
+    background-color: transparent;
+    color: #d32f2f;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.favorite-button:disabled,
+.favorite-button.favorited {
+    background-color: #d32f2f;
+    color: white;
+    border-color: #d32f2f;
+    cursor: default;
+}
+
+.translate-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #6c757d;
+    background: transparent;
+    color: #6c757d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== MODERN STATISTICS TABLE DESIGN ===== */
+.drug-stats {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.drug-stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d32f2f 0%, #ff5252 100%);
+/* Yapay Zeka Özet Kutusu - Açık Kırmızı Arka Plan */
+.summary-box {
+    background: #ffe5e5 !important;
+    border: 2px solid #d32f2f !important;
+    border-radius: 18px;
+    padding: 24px 32px;
+    margin-bottom: 32px;
+    color: #222;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 12px 0 rgba(211, 47, 47, 0.08);
+    transition: box-shadow 0.2s;
+}
+    border-radius: 16px 16px 0 0;
+}
+
+.stats-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f3f4f6;
+}
+
+.stats-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.stats-subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stats-table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    background: linear-gradient(90deg, #d32f2f 0%, #ff5252 100%) !important;
+    color: #fff !important;
+}
+
+.stats-table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    border-bottom: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+}
+
+.stats-table-row:last-child {
+    border-bottom: none;
+}
+
+.stats-table-row:hover {
+    background-color: #f8fafc;
+    transform: translateX(2px);
+}
+
+.stats-additional {
+    background: linear-gradient(135deg, #fef3c7 0%, #fef7cd 100%);
+    border-top: 2px solid #f59e0b;
+}
+
+.stats-additional:hover {
+    background: linear-gradient(135deg, #fde68a 0%, #fef3c7 100%);
+}
+
+.stats-table-cell {
+    padding: 1.25rem 1.5rem;
+    vertical-align: middle;
+    border-right: 1px solid #f3f4f6;
+}
+
+.stats-table-cell:last-child {
+    border-right: none;
+}
+
+.header-cell {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(90deg, #d32f2f 0%, #ff5252 100%) !important;
+    color: #fff !important;
+}
+
+.metric-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.metric-icon {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.metric-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.value-cell {
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    background: linear-gradient(135deg, #fafbfc 0%, #f8fafc 100%);
+}
+
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #D92B2B;
+    line-height: 1;
+}
+
+.metric-unit {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.description-cell {
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.5;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.stats-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.stats-note {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+    font-style: italic;
+}
+
+.stats-note strong {
+    color: #374151;
+    font-weight: 600;
+}
+
+/* ===== DISCLAIMER - DÜZENLI VE SİMETRİK ===== */
+.disclaimer {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffeaea 100%);
+  border: 2px solid #D92B2B;
+  border-radius: 16px;
+  margin: 3rem 0;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(217, 43, 43, 0.15);
+}
+
+.disclaimer-header {
+  background: linear-gradient(135deg, #D92B2B 0%, #B52323 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.disclaimer-header::before {
+  content: '⚠️';
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.disclaimer-header::after {
+  content: '⚠️';
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.disclaimer-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.disclaimer-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.disclaimer-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #8B1538;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .stats-table-header,
+    .stats-table-row {
+        grid-template-columns: 1.8fr 1fr 2.5fr;
+    }
+    
+    .metric-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.25rem;
+    }
+    
+    .metric-value {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .drug-stats {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .stats-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stats-table-header,
+    .stats-table-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .stats-table-cell {
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .stats-table-cell:last-child {
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .header-cell {
+        display: none;
+    }
+    
+    .metric-cell {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border-radius: 8px 8px 0 0;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    
+    .value-cell {
+        background: white;
+        border-radius: 0;
+        padding: 1.5rem 1rem;
+    }
+    
+    .description-cell {
+        background: #f8fafc;
+        border-radius: 0 0 8px 8px;
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+    
+    .stats-table-row {
+        margin-bottom: 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .stats-table-row:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Responsive Disclaimer */
+@media (max-width: 768px) {
+  .disclaimer {
+    margin: 2rem 0;
+  }
+  
+  .disclaimer-header {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .disclaimer-header::before,
+  .disclaimer-header::after {
+    font-size: 1.25rem;
+  }
+  
+  .disclaimer-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .disclaimer-content {
+    padding: 1.5rem;
+  }
+  
+  .disclaimer-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .disclaimer-header {
+    padding: 1rem;
+  }
+  
+  .disclaimer-header::before,
+  .disclaimer-header::after {
+    display: none;
+  }
+  
+  .disclaimer-content {
+    padding: 1.25rem;
+  }
+}
