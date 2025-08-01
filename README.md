@@ -4,7 +4,7 @@ AI Takım 38
 
 # Ürün İle İlgili Bilgiler
 ## Takım Elemanları
-- Ahmet Melih Çalış: Scrum Master
+- Ahmet Melih Çalış: Scrum Master & Developer
 - Melike Atila: Product Owner
 - Cansu Ceylan: Developer
 - Kaan Bilirgen: Developer
@@ -17,7 +17,7 @@ AI Takım 38
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
 
 ## Ürün Açıklaması
-PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri akıllı önerilerle sunan, yapay zeka destekli modern bir ilaç bilgi platformudur.
+PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri sunan, yapay zeka destekli bir ilaç bilgi platformudur.
 
 ## Ürün Özellikleri
 - İlaç bilgilerini özetleyen yapay zeka motoru
@@ -33,6 +33,90 @@ PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri ak
 - Eczacılık / Tıp Öğrencileri
 - Eczaneler
 - Hastaneler
+
+---
+# Projeyi Lokal Ortamda Çalıştırma (Kurulum Rehberi)
+
+Bu rehber, PharmAI projesini kendi bilgisayarınızda sıfırdan kurup çalıştırmanız için gerekli adımları içermektedir. Proje, bir Backend ve bir Frontend olmak üzere iki ana parçadan oluşur.
+
+## Gereksinimler
+- Python (versiyon 3.8 veya üstü)
+- Node.js ve npm
+- Git
+
+## Adım 1: Projeyi Bilgisayarınıza İndirme (Klonlama)
+
+Bu adımla, projenin tüm dosyalarını internetten (GitHub'dan) kendi bilgisayarınıza indireceksiniz.
+
+Bu komutların çalışması için bilgisayarınızda Git'in kurulu olması gerekmektedir.
+
+1. Bilgisayarınızda projenin kurulmasını istediğiniz bir klasörde (örneğin Masaüstü veya Belgeler) bir terminal (Komut İstemi, PowerShell, vb.) açın.
+
+2. Aşağıdaki komutu kopyalayıp terminale yapıştırın ve Enter'a basın. Bu komut, projenin tüm dosyalarını internetten indirip PharmAI adında yeni bir klasör oluşturacaktır.
+
+       git clone https://github.com/ahmetmelihcalis/PharmAI.git
+
+3. İndirme işlemi bittikten sonra, oluşturulan bu yeni klasörün içine girmek için aşağıdaki komutu çalıştırın:
+
+       cd PharmAI
+
+## Adım 2: Backend'i Ayarlama ve Çalıştırma
+
+1. Öncelikle yeni bir powershell terminali açın ve dosyanın bilgisayarınızdaki konumuna gidin.
+
+2. Daha sonra aşağıdaki komutla dosya içindeki backend klasörüne gidin.
+
+       cd backend
+
+3. Bilgisayarınıza aşağıdaki komutla sanal ortamı kurun
+
+       python -m venv venv
+
+4. Ardından sanal ortamı aktive edin.
+
+## Windows için:
+
+    .\venv\Scripts\activate
+
+## macOS / Linux için:
+
+    source venv/bin/activate
+
+5. API anahtarını ayarlayın.
+
+Backend klasörü içindeki .env dosyasına gidin ve aşağıdaki satırı bulun:
+
+    GOOGLE_API_KEY = 
+
+Dosyanın içindeki satıra Google AI Studio'dan oluşturduğunuz kendi Google Gemini API anahtarınızı yapıştırın:
+
+    GOOGLE_API_KEY= "SIZIN_GOOGLE_GEMINI_API_ANAHTARINIZ"
+
+6. Sanal ortamı aktive ettikten sonra gerekli dosyaları indirin.
+
+       pip install -r requirements.txt
+
+7. Artık aşağıdaki komutla backendi çalıştırabilirsiniz.
+
+       uvicorn app.main:app --reload
+
+### Terminalde Uvicorn running on http://127.0.0.1:8000 mesajını gördüğünüzde, backend başarıyla çalışıyor demektir. Bu terminali açık bırakın.
+
+## Adım 3: Frontend'i Ayarlama ve Çalıştırma (Kullanıcı Arayüzü)
+
+1. YENİ BİR Powershell terminali açın (***backend ile aynı terminalde çalışmaz***) ve projenin ana klasöründen frontend klasörüne gidin.
+
+       cd frontend
+
+2. Gerekli paketleri kurun.
+
+       npm install
+
+3. Frontend uygulamasını başlatın.
+
+       npm start
+
+### Bu komut, tarayıcınızda otomatik olarak http://localhost:3000 adresini açacaktır. Artık PharmAI uygulamasını kullanabilirsiniz.
 
 ---
 
@@ -78,8 +162,7 @@ Sprint Board Screenshot:
 
 - Ürün geliştirme sürecinde daha fazla ilerleme kaydedebilmek için ekip içi iş bölümü ve hız konusunda iyileştirme kararı alındı.
 
-- Ürün geliştirme aşamasın
-da kullanılan teknolojilerin gözden geçirilmesi sonucunda, belirli teknolojilerde değişiklik yapılması gerektiği değerlendirilerek bu konuda adım atılması kararlaştırıldı.
+- Ürün geliştirme aşamasında kullanılan teknolojilerin gözden geçirilmesi sonucunda, belirli teknolojilerde değişiklik yapılması gerektiği değerlendirilerek bu konuda adım atılması kararlaştırıldı.
  
 ---
 
@@ -131,6 +214,8 @@ Sprint Board ve Product Screenshots:
 - Ürün detaylarındaki eksiklerin giderilmesi ve veri setiyle ilgili sorunların çözülmesi hedeflendi.
 
 - Profil sayfası ile kayıt/giriş entegrasyonu üzerine çalışmaların sürdürülmesi planlandı
+
+---
 
 # Sprint 3
 
