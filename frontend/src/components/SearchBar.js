@@ -1,5 +1,3 @@
-// frontend/src/components/SearchBar.js (YENİ DOSYA)
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,9 +8,8 @@ const SearchBar = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         if (searchTerm.trim()) {
-            // Kullanıcıyı arama sonuçları sayfasına yönlendir
             navigate(`/search?q=${searchTerm.trim()}`);
-            setSearchTerm(''); // Arama yaptıktan sonra kutuyu temizle
+            setSearchTerm('');
         }
     };
 

@@ -296,7 +296,6 @@
   margin: 0 auto;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .stats-table-header,
     .stats-table-row {

@@ -53,7 +53,6 @@ def _safe_generate_content(prompt: str, retries: int = 3, delay: int = 3) -> str
                 generation_config=generation_config
             )
             
-            # Yanıtı kontrol et
             if response and response.text and len(response.text.strip()) > 20:
                 return response.text.strip()
             else:
@@ -180,7 +179,7 @@ def summarize_reviews_with_gemini(reviews_text: str, drug_name: str) -> str:
     
     analysis = extract_key_phrases_from_reviews(reviews_text)
     
-    clean_reviews = reviews_text[:4000]  # Daha fazla veri al
+    clean_reviews = reviews_text[:4000] 
     
     import random
     import time

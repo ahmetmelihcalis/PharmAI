@@ -1,5 +1,3 @@
-// frontend/src/pages/ComparePage.js (TAM VE DOĞRU HALİ)
-
 import React, { useState, useEffect } from 'react';
 import { fetchDrugs, compareTwoDrugs } from '../services/api';
 

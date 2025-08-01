@@ -4,7 +4,6 @@ from . import ai_service
 
 def translate_condition_simple(condition: str) -> str:
     simple_translations = {
-        # Genel hastalıklar
         'depression': 'Depresyon',
         'anxiety': 'Anksiyete', 
         'pain': 'Ağrı',
@@ -93,8 +92,6 @@ def translate_condition_simple(condition: str) -> str:
         'epilepsy': 'Epilepsi',
         'glaucoma': 'Glokom',
         'cataracts': 'Katarakt',
-        
-        # Ekranda görünen spesifik hastalıklar
         'bipolar disorder': 'Bipolar Bozukluk',
         'schizoaffective disorder': 'Şizoafektif Bozukluk',
         'vertigo': 'Vertigo',
@@ -124,8 +121,6 @@ def translate_condition_simple(condition: str) -> str:
         'insomnia': 'Uykusuzluk',
         'jet lag': 'Jet Lag',
         'shift work sleep disorder': 'Vardiya Çalışması Uyku Bozukluğu',
-        
-        # Artrit türleri ve eklem hastalıkları
         'rheumatoid arthritis': 'Romatoid Artrit',
         'psoriatic arthritis': 'Psoriatik Artrit', 
         'juvenile arthritis': 'Juvenil Artrit',
@@ -134,8 +129,6 @@ def translate_condition_simple(condition: str) -> str:
         'gouty arthritis': 'Gut Artriti',
         'reactive arthritis': 'Reaktif Artrit',
         'septic arthritis': 'Septik Artrit',
-        
-        # Deri hastalıkları
         'psoriasis': 'Sedef Hastalığı',
         'plaque psoriasis': 'Plak Psoriazis',
         'scalp psoriasis': 'Sakal Derisinde Psoriazis',
@@ -143,21 +136,15 @@ def translate_condition_simple(condition: str) -> str:
         'atopic dermatitis': 'Atopik Dermatit',
         'seborrheic dermatitis': 'Seboreik Dermatit',
         'contact dermatitis': 'Kontakt Dermatit',
-        
-        # Enflamatuar barsak hastalıkları
         'inflammatory bowel disease': 'Enflamatuar Barsak Hastalığı',
         'ulcerative colitis': 'Ülseratif Kolit',
         'crohn\'s disease': 'Crohn Hastalığı',
-        
-        # Otoimmun hastalıklar
         'systemic lupus erythematosus': 'Sistemik Lupus Eritematozus',
         'sjogren\'s syndrome': 'Sjögren Sendromu',
         'scleroderma': 'Skleroderma',
         'vasculitis': 'Vasülit',
         'polymyalgia rheumatica': 'Polimiyaljiya Romatika',
         'giant cell arteritis': 'Dev Hücreli Arterit',
-        
-        # Kanser türleri
         'breast cancer': 'Meme Kanseri',
         'lung cancer': 'Akciğer Kanseri',
         'colon cancer': 'Kolon Kanseri',
@@ -166,8 +153,6 @@ def translate_condition_simple(condition: str) -> str:
         'leukemia': 'Lösemi',
         'lymphoma': 'Lenfoma',
         'melanoma': 'Melanom',
-        
-        # Nörolojik hastalıklar
         'multiple sclerosis': 'Multipl Skleroz',
         'parkinson\'s disease': 'Parkinson Hastalığı',
         'alzheimer\'s disease': 'Alzheimer Hastalığı',
@@ -175,8 +160,6 @@ def translate_condition_simple(condition: str) -> str:
         'amyotrophic lateral sclerosis': 'Amiyotrofik Lateral Skleroz',
         'myasthenia gravis': 'Miyastenia Gravis',
         'guillain-barre syndrome': 'Guillain-Barré Sendromu',
-        
-        # Hormonal bozukluklar
         'hypothyroidism': 'Hipotiroidizm',
         'hyperthyroidism': 'Hipertiroidizm',
         'diabetes type 1': 'Tip 1 Diyabet',
@@ -184,8 +167,6 @@ def translate_condition_simple(condition: str) -> str:
         'gestational diabetes': 'Gestasyonel Diyabet',
         'cushing\'s syndrome': 'Cushing Sendromu',
         'addison\'s disease': 'Addison Hastalığı',
-        
-        # Kalp hastalıkları
         'coronary heart disease': 'Koroner Kalp Hastalığı',
         'myocardial infarction': 'Miyokard Enfarkti',
         'angina': 'Anjina',
@@ -193,14 +174,12 @@ def translate_condition_simple(condition: str) -> str:
         'bradycardia': 'Bradikardi',
         'tachycardia': 'Taşikardi',
         'cardiomyopathy': 'Kardiyomiyopati',
-        
-        # Veri setindeki yaygın hastalıklar
         'adhd': 'DEHB (Dikkat Eksikliği Hiperaktivite Bozukluğu)',
         'opiate dependence': 'Opiyat Bağımlılığı',
         'benign prostatic hyperplasia': 'İyi Huylu Prostat Büyümesi (BPH)',
         'emergency contraception': 'Acil Kontrasepsiyon',
         'bipolar disorder': 'Bipolar Bozukluk',
-        'bipolar disorde': 'Bipolar Bozukluk',  # Yazım hatası için
+        'bipolar disorde': 'Bipolar Bozukluk', 
         'epilepsy': 'Epilepsi',
         'birth control': 'Doğum Kontrolü',
         'migraine prevention': 'Migren Önleme',
@@ -264,8 +243,6 @@ def translate_condition_simple(condition: str) -> str:
         'hemorrhoids': 'Hemoroid',
         'pilonidal cyst': 'Pilonidal Kist',
         'perianal fistula': 'Perianal Fistül',
-        
-        # Ek yaygın hastalıklar ve durumlar
         'high blood pressure': 'Yüksek Tansiyon',
         'hypertension': 'Hipertansiyon',
         'type 2 diabetes': 'Tip 2 Diyabet',
@@ -378,8 +355,6 @@ def translate_condition_simple(condition: str) -> str:
         'hypophosphatemia': 'Hipofosfatemi',
         'hypermagnesemia': 'Hipermagnezemi',
         'hypomagnesemia': 'Hipomagnezemi',
-        
-        # Problemli/geçersiz girdi temizleme
         '5 users found this comment helpful': 'Geçersiz Veri',
         '65+years users found this comment helpful': 'Geçersiz Veri',
         'users found this comment helpful': 'Geçersiz Veri',
@@ -408,8 +383,6 @@ def translate_condition_simple(condition: str) -> str:
         'none': 'Yok',
         'off label use': 'Endikasyon Dışı Kullanım',
         'off-label use': 'Endikasyon Dışı Kullanım',
-        
-        # Ek yaygın hastalıklar
         'smoking cessation': 'Sigara Bırakma',
         'weight management': 'Kilo Yönetimi',
         'weight loss': 'Kilo Verme',
@@ -466,8 +439,6 @@ def translate_condition_simple(condition: str) -> str:
         'blocked milk duct': 'Tıkanmış Süt Kanalı',
         'low milk supply': 'Düşük Süt Üretimi',
         'oversupply of milk': 'Aşırı Süt Üretimi',
-        
-        # Daha fazla yaygın hastalık
         'acne': 'Akne',
         'eczema': 'Egzama',
         'psoriasis': 'Sedef Hastalığı',
@@ -607,17 +578,13 @@ def translate_condition_simple(condition: str) -> str:
     
     condition_lower = condition.lower().strip()
     
-    # Önce basit çeviri dene
     if condition_lower in simple_translations:
         return simple_translations[condition_lower]
     
-    # Çevrilemeyen hastalığı logla
     print(f"ÇEVRİLEMEYEN HASTALIK: '{condition}' -> '{condition_lower}'")
     
-    # Genel çeviri kuralları uygula - daha kapsamlı
     translated = condition_lower
     
-    # Kelime değiştirimler
     replacements = {
         'disorder': 'bozukluğu',
         'disease': 'hastalığı', 
@@ -710,16 +677,13 @@ def translate_condition_simple(condition: str) -> str:
         'instability': 'instabilitesi'
     }
     
-    # Tüm değiştirimler uygula
     for eng, tr in replacements.items():
         if eng in translated:
             translated = translated.replace(eng, tr)
-    
-    # Bazı özel durumlar
-    if translated != condition_lower:  # Eğer değişim olduysa
+
+    if translated != condition_lower:
         return translated.title()
     
-    # Hiçbir şey işe yaramazsa orijinali döndür ama Türkçe format
     return condition.title()
 
 def compare_drugs(df: pd.DataFrame, drug1_name: str, drug2_name: str):
@@ -730,16 +694,13 @@ def compare_drugs(df: pd.DataFrame, drug1_name: str, drug2_name: str):
 
         if drug1_data.empty or drug2_data.empty:
             return None
-
-        # En yaygın durumları al
+        
         drug1_top_conditions = drug1_data['condition'].value_counts().head(3)
         drug2_top_conditions = drug2_data['condition'].value_counts().head(3)
         
-        # Basit çeviri ile durumları Türkçeye çevir
         drug1_conditions_tr = {translate_condition_simple(cond): count for cond, count in drug1_top_conditions.items()}
         drug2_conditions_tr = {translate_condition_simple(cond): count for cond, count in drug2_top_conditions.items()}
 
-        # Sonucu oluştur
         result = {
             drug1_name: {
                 "average_rating": round(drug1_data['rating'].mean(), 2),

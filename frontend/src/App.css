@@ -1012,7 +1012,7 @@ main {
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: center; /* DEĞİŞİKLİK */
+  justify-content: center; 
   gap: 0.5rem;
 }
 
@@ -1249,7 +1249,6 @@ main {
   font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
 }
 
-/* Responsive Footer Stats */
 @media (max-width: 768px) {
   .footer-stats-grid {
     gap: 1.5rem;
@@ -1351,7 +1350,6 @@ main {
   }
 }
 
-/* ACCESSIBILITY IMPROVEMENTS */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -1365,7 +1363,6 @@ main {
   outline-offset: 2px;
 }
 
-/* UTILITY CLASSES */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }

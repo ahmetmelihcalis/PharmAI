@@ -92,7 +92,6 @@ def load_data():
         print(f"!!! KRİTİK HATA: Veri seti yüklenirken sunucu çöktü: {e}")
         df_drugs = pd.DataFrame()
 
-# --- Kimlik Doğrulama (Authentication) ---
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 def get_current_user(db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
@@ -108,7 +107,6 @@ def get_current_user(db: Session = Depends(get_db), token: str = Depends(oauth2_
     if user is None: raise credentials_exception
     return user
 
-# --- API ENDPOINT'LERİ ---
 @app.get("/")
 def read_root(): return {"message": "PharmAI API'sine hoş geldiniz!"}
 
@@ -165,25 +163,20 @@ def get_drug_details(drug_name: str):
     if df_drugs is None:
         raise HTTPException(status_code=503, detail="İlaç verileri mevcut değil.")
     
-    # URL'den gelen ismi decode et
     decoded_name = unquote(drug_name)
     
-    # Farklı formatlarda arama yap
     variations = [
-        decoded_name,  # Orijinal hali
-        decoded_name.replace(' / ', '/'),  # Boşluklu/slahlı versiyon
-        decoded_name.replace('/', ' / ').strip(),  # Boşluksuz/slahlı versiyon
-        decoded_name.lower(),  # Küçük harf
-        decoded_name.upper()   # Büyük harf
+        decoded_name,  
+        decoded_name.replace(' / ', '/'), 
+        decoded_name.replace('/', ' / ').strip(),  
+        decoded_name.lower(), 
+        decoded_name.upper()  
     ]
-    
-    # Tüm varyasyonları dene
     for name in variations:
         drug_data = df_drugs[df_drugs['drug_name'].str.lower() == name.lower()]
         if not drug_data.empty:
             return drug_data.to_dict(orient='records')
     
-    # Eğer hiçbir varyasyonla bulunamazsa hata döndür
     print(f"Aranan ilaç bulunamadı: {decoded_name}")
     print(f"Denenen varyasyonlar: {variations}")
     raise HTTPException(status_code=404, detail=f"'{decoded_name}' isimli ilaç bulunamadı.")
@@ -191,7 +184,6 @@ def get_drug_details(drug_name: str):
 @app.get("/drugs/{drug_name}/rating-distribution")
 def get_rating_distribution(drug_name: str):
     if df_drugs is None or df_drugs.empty: raise HTTPException(status_code=503, detail="İlaç verileri mevcut değil.")
-    # URL decode işlemi
     decoded_drug_name = unquote(drug_name)
     drug_data = df_drugs[df_drugs['drug_name'].str.lower() == decoded_drug_name.lower()]
     if drug_data.empty: raise HTTPException(status_code=404, detail=f"'{decoded_drug_name}' isimli ilaç bulunamadı.")
@@ -200,7 +192,6 @@ def get_rating_distribution(drug_name: str):
 
 @app.get("/drugs/{drug_name}/summary")
 def get_drug_summary(drug_name: str, db: Session = Depends(get_db)):
-    # URL decode işlemi
     decoded_drug_name = unquote(drug_name)
     cached_summary = crud.get_summary_from_cache(db, drug_name=decoded_drug_name)
     if cached_summary:
@@ -211,20 +202,13 @@ def get_drug_summary(drug_name: str, db: Session = Depends(get_db)):
     drug_data = df_drugs[df_drugs['drug_name'].str.lower() == decoded_drug_name.lower()]
     if drug_data.empty: raise HTTPException(status_code=404, detail=f"'{decoded_drug_name}' isimli ilaç bulunamadı.")
 
-    # Daha çeşitli yorumlar için karma karışım al
-    # En yararlı yorumlar
     top_useful = drug_data.sort_values(by='useful_count', ascending=False).head(8)
-    # En yüksek puanlı yorumlar
     top_rated = drug_data.sort_values(by='rating', ascending=False).head(8)
-    # En düşük puanlı yorumlar (yan etki bilgisi için)
     low_rated = drug_data.sort_values(by='rating', ascending=True).head(5)
-    # Rastgele seçim (daha fazla çeşitlilik)
     random_sample = drug_data.sample(n=min(10, len(drug_data)), random_state=42)
     
-    # Tüm yorumları birleştir ve tekrarları kaldır
     all_reviews = pd.concat([top_useful, top_rated, low_rated, random_sample]).drop_duplicates()
     
-    # En fazla 25 yorum al (daha zengin veri)
     selected_reviews = all_reviews.head(25)
     
     reviews_text = "\n\n---\n\n".join(selected_reviews['review'].tolist())
@@ -240,7 +224,6 @@ def get_drug_summary(drug_name: str, db: Session = Depends(get_db)):
 @app.get("/search")
 def search_drugs_and_conditions(query: str):
     if df_drugs is None or df_drugs.empty: raise HTTPException(status_code=503, detail="İlaç verileri mevcut değil.")
-    # URL decode işlemi
     decoded_query = unquote(query)
     query_lower = decoded_query.lower()
     matched_drugs = df_drugs[df_drugs['drug_name'].str.lower().str.contains(query_lower, na=False)]
@@ -252,10 +235,8 @@ def search_drugs_and_conditions(query: str):
 def compare_two_drugs(drug1: str, drug2: str):
     if df_drugs is None or df_drugs.empty:
         raise HTTPException(status_code=503, detail="İlaç verileri mevcut değil.")
-    # URL decode işlemi
     decoded_drug1 = unquote(drug1)
     decoded_drug2 = unquote(drug2)
-    # nlp_service.compare_drugs fonksiyonunu kullan
     from app.services import nlp_service
     result = nlp_service.compare_drugs(df_drugs, decoded_drug1, decoded_drug2)
     if result is None:
@@ -264,7 +245,6 @@ def compare_two_drugs(drug1: str, drug2: str):
 
 @app.get("/check-interaction")
 def check_drug_interaction(drug1: str, drug2: str):
-    # URL decode işlemi
     decoded_drug1 = unquote(drug1)
     decoded_drug2 = unquote(drug2)
     rxcui1 = interaction_service.get_rxcui(decoded_drug1)

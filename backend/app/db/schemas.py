@@ -1,7 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
 
-# --- Token Şemaları ---
 class Token(BaseModel):
     access_token: str
     token_type: str
@@ -9,7 +8,6 @@ class Token(BaseModel):
 class TokenData(BaseModel):
     email: Optional[EmailStr] = None
 
-# --- Favori İlaç Şemaları ---
 class FavoriteDrugBase(BaseModel):
     drug_name: str
 
@@ -20,7 +18,6 @@ class FavoriteDrug(FavoriteDrugBase):
     owner_id: int
     class Config: from_attributes = True
 
-# --- Kullanıcı Şemaları ---
 class UserBase(BaseModel):
     email: EmailStr
     display_name: str | None = None
@@ -33,7 +30,6 @@ class User(UserBase):
     favorites: List[FavoriteDrug] = []
     class Config: from_attributes = True
 
-# --- Çeviri Şemaları ---
 class BatchTranslateRequest(BaseModel):
     texts: List[str]
 

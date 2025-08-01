@@ -4,7 +4,6 @@ import { Link, Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './ProfilePage.css';
 
-// Alt bileşenler
 const ProfileAvatar = ({ email }) => {
   const getInitials = useCallback((email) => {
     if (!email) return 'U';
@@ -173,8 +172,6 @@ LogoutModal.propTypes = {
   onConfirm: PropTypes.func.isRequired,
   isLoading: PropTypes.bool
 };
-
-// Ana bileşen
 const ProfilePage = () => {
   const { user, logout, removeFavorite } = useAuth();
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
@@ -183,8 +180,6 @@ const ProfilePage = () => {
   const [isEditingName, setIsEditingName] = useState(false);
   const [displayName, setDisplayName] = useState(user?.name || user?.email?.split('@')[0] || '');
   const [isSavingName, setIsSavingName] = useState(false);
-  
-  // Yeni state'ler
   const [activeTab, setActiveTab] = useState('account');
   const [settings, setSettings] = useState({
     theme: 'light',
@@ -228,7 +223,6 @@ const ProfilePage = () => {
     URL.revokeObjectURL(url);
   };
 
-  // Tarih formatlama fonksiyonu
   const formatDate = useCallback((dateString) => {
     if (!dateString) return 'Bilinmiyor';
     try {
@@ -243,7 +237,6 @@ const ProfilePage = () => {
     }
   }, []);
 
-  // Çıkış işlemi
   const handleLogout = useCallback(async () => {
     setIsLoggingOut(true);
     setError(null);
@@ -259,7 +252,6 @@ const ProfilePage = () => {
     }
   }, [logout]);
 
-  // Favori kaldırma işlemi
   const handleRemoveFavorite = useCallback(async (favoriteId) => {
     if (!removeFavorite) return;
     
@@ -274,8 +266,6 @@ const ProfilePage = () => {
   const handleNameChange = (e) => {
     setDisplayName(e.target.value);
   };
-
-  // İsim güncelleme fonksiyonunu düzeltiyoruz
   const handleSaveName = async () => {
     if (!displayName.trim()) {
       setError('İsim boş olamaz');
@@ -286,13 +276,9 @@ const ProfilePage = () => {
     setError(null);
 
     try {
-      // Burada gerçek API çağrısı yerine sadece local state'i güncelliyoruz
-      // Eğer API'de updateUserDisplayName fonksiyonu yoksa, bu işlemi AuthContext üzerinden yapabilirsiniz
       console.log('Yeni ad kaydedildi:', displayName);
       setIsEditingName(false);
       
-      // Başarı mesajı (isteğe bağlı)
-      // setSuccessMessage('İsim başarıyla güncellendi!');
     } catch (err) {
       console.error('İsim güncelleme hatası:', err);
       setError('İsim güncellenirken bir hata oluştu. Lütfen tekrar deneyin.');
@@ -302,7 +288,7 @@ const ProfilePage = () => {
   };
 
   const stats = useMemo(() => {
-    if (!user) return []; // Kullanıcı yoksa boş dizi döndür
+    if (!user) return []; 
 
     const favoritesCount = user.favorites?.length || 0;
     const membershipDays = user.created_at 
@@ -331,7 +317,6 @@ const ProfilePage = () => {
     ];
   }, [user, formatDate]);
 
-  // Kullanıcı giriş yapmamışsa login sayfasına yönlendir
   if (!user) {
     return <Navigate to="/login" replace />;
   }

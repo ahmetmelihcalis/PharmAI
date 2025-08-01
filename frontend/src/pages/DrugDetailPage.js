@@ -10,9 +10,7 @@ import {
 import './DrugDetail.css';
 
 const DrugDetailPage = () => {
-    // / karakteri ve varyasyonlarını dene
     const rawDrugName = useParams().drugName;
-    // Tüm varyasyonları dene ve backend'de ilk bulunanı kullan
     const drugNameVariants = [
       rawDrugName,
       rawDrugName.replace(/\s*\/\s*/g, '_slash_'),
@@ -35,17 +33,14 @@ const DrugDetailPage = () => {
       rawDrugName.replace(/\s*\/\s*/g, ' / ').toUpperCase(),
       rawDrugName.replace(/\s*\/\s*/g, ' ').toLowerCase(),
       rawDrugName.replace(/\s*\/\s*/g, ' ').toUpperCase(),
-      // Slashlı varyasyonlar
       rawDrugName.replace(/\s*\/\s*/g, '_slash_').toLowerCase(),
       rawDrugName.replace(/\s*\/\s*/g, '_slash_').toUpperCase(),
       rawDrugName.replace(/\s*\/\s*/g, '_slash_').replace(/ /g, ''),
       rawDrugName.replace(/\s*\/\s*/g, '_slash_').replace(/ /g, '').toLowerCase(),
       rawDrugName.replace(/\s*\/\s*/g, '_slash_').replace(/ /g, '').toUpperCase(),
-      // Boşluksuz ve slashlı
       rawDrugName.replace(/ /g, ''),
       rawDrugName.replace(/ /g, '').toLowerCase(),
       rawDrugName.replace(/ /g, '').toUpperCase(),
-      // Ters varyasyonlar
       rawDrugName.replace(/_slash_/g, '/'),
       rawDrugName.replace(/_slash_/g, '/').toLowerCase(),
       rawDrugName.replace(/_slash_/g, '/').toUpperCase(),
@@ -54,7 +49,6 @@ const DrugDetailPage = () => {
       rawDrugName.replace(/_slash_/g, ' / ').toUpperCase(),
     ];
     const [drugName, setDrugName] = useState(rawDrugName);
-    // Varyasyonları sırayla dene, ilk bulunanı kullan
     useEffect(() => {
       let found = false;
       const tryVariants = async () => {
@@ -67,11 +61,10 @@ const DrugDetailPage = () => {
               break;
             }
           } catch (err) {
-            // denemeye devam
           }
         }
         if (!found) {
-          setDrugName(rawDrugName); // Hiçbiri bulunamazsa orijinali kullan
+          setDrugName(rawDrugName); 
         }
       };
       tryVariants();

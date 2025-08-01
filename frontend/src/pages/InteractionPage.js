@@ -1,8 +1,6 @@
-// frontend/src/pages/InteractionPage.js (TAM VE DÜZELTİLMİŞ HALİ)
-
 import React, { useState, useEffect } from 'react';
 import { fetchDrugs, checkInteraction } from '../services/api';
-import './InteractionPage.css'; // Sayfaya özel CSS'i import ediyoruz
+import './InteractionPage.css';
 
 const InteractionPage = () => {
     const [allDrugs, setAllDrugs] = useState([]);

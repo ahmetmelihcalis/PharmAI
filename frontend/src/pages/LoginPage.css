@@ -3,9 +3,9 @@
     --login-primary-hover-color: #B52323;
     --login-background-color: #ffffff;
     --login-form-background-color: #ffffff;
-    --login-text-color: #333333; /* Darker text */
-    --login-light-text-color: #666666; /* Darker light text */
-    --login-border-color: #e0e0e0; /* Darker, more neutral border */
+    --login-text-color: #333333; 
+    --login-light-text-color: #666666; 
+    --login-border-color: #e0e0e0; 
     --login-placeholder-color: #e6b7b5;
     --login-disabled-bg-color: #fce8e6;
     --login-disabled-text-color: #d9534f;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px); /* Adjust based on header height */
+    min-height: calc(100vh - 60px); 
     width: 100%;
     padding: 2rem;
     background-color: var(--login-background-color) !important;
@@ -34,12 +34,10 @@
     box-shadow: 0 6px 20px rgba(217, 83, 79, 0.1);
 }
 
-/* === DEĞİŞİKLİK BURADA YAPILDI === */
 .login-form-header {
     text-align: center;
-    margin-bottom: 2rem; /* Başlık ile form alanları arasına boşluk ekler */
+    margin-bottom: 2rem; 
 }
-/* =============================== */
 
 .login-form-header h2 {
     font-size: 2rem;

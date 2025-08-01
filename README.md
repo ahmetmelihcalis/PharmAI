@@ -131,3 +131,54 @@ Sprint Board ve Product Screenshots:
 - Ürün detaylarındaki eksiklerin giderilmesi ve veri setiyle ilgili sorunların çözülmesi hedeflendi.
 
 - Profil sayfası ile kayıt/giriş entegrasyonu üzerine çalışmaların sürdürülmesi planlandı
+
+# Sprint 3
+
+- **Sprint Notları**: Bu sprint kapsamında ürün geliştirme sürecinin tamamlanmasına odaklanılmıştır.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken toplam 300 puanlık backlog bulunmaktadır. 3 sprinte bölündüğünde üçüncü sprintin 100 puandan oluşması gerektiği kararlaştırıldı.
+
+- **Daily Scrum**: Daily Scrum toplantıları müsaitlik durumuna göre Google Meet veya WhatsApp üzerinden yapılmaya devam edildi.
+
+- **Sprint Board Update**:
+
+Sprint Board ve Product Screenshots: 
+
+![Backlog 1](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/Sprint%203%20-%20Sprint%20Board%20-%20Notion.png?raw=true)
+
+![Backlog 2](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/1.png?raw=true)
+
+![Backlog 3](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/2.png?raw=true)
+
+![Backlog 4](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/3.png?raw=true)
+
+![Backlog 5](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/4.png?raw=true)
+
+![Backlog 6](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/5.png?raw=true)
+
+![Backlog 7](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/6.png?raw=true)
+
+![Backlog 8](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/7.png?raw=true)
+
+![Backlog 9](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/8.png?raw=true)
+
+![Backlog 10](https://github.com/ahmetmelihcalis/PharmAI/blob/main/Project%20Management/Sprint3/9.png?raw=true)
+
+
+- **Sprint Review:**
+
+- Ürünün yapay zeka motoru eksikleri geliştirildi.
+
+- Ürünün tasarım eksikleri tamamlandı.
+
+- Ürünün profil kısmında eklenmesi planlanıp eklenemeyen özellikler ve karşılaştırma kısmında ortaya çıkan çeviri hataları değerlendirildi.
+
+- Sprint Review Katılımcıları:
+
+  Ahmet Melih Çalış
+
+- **Sprint Retrospective:**
+
+- Takım üyelerinin gelecek projelerde daha fazla aktif olması gerektiği vurgulanmıştır.
