@@ -62,7 +62,7 @@ Bu komutların çalışması için bilgisayarınızda Git'in kurulu olması gere
 
 ## Adım 2: Backend'i Ayarlama ve Çalıştırma
 
-1. Öncelikle yeni bir powershell terminali açın ve dosyanın bilgisayarınızdaki konumuna gidin.
+1. Öncelikle yeni bir Powershell terminali açın ve dosyanın bilgisayarınızdaki konumuna gidin.
 
 2. Daha sonra aşağıdaki komutla dosya içindeki backend klasörüne gidin.
 
@@ -92,7 +92,7 @@ Dosyanın içindeki satıra Google AI Studio'dan oluşturduğunuz kendi Google G
 
     GOOGLE_API_KEY= "SIZIN_GOOGLE_GEMINI_API_ANAHTARINIZ"
 
-6. Sanal ortamı aktive ettikten sonra gerekli dosyaları indirin.
+6. Sanal ortamı aktive ettikten ve API anahtarını ayarladıktan sonra gerekli dosyaları indirin.
 
        pip install -r requirements.txt
 
