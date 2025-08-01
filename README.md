@@ -9,9 +9,13 @@ AI Takım 38
 - Cansu Ceylan: Developer
 - Kaan Bilirgen: Developer
 - Buse Nur Ermez: Developer
+
 ## Ürün İsmi
 
 -- PharmAI --
+
+## Ürün Videosu URL
+[AI Team 38 Video URL](https://youtu.be/rz_fvUvts4s?feature=shared)
 
 ## Proje Çalışma ve Backlog Sayfası URL
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
