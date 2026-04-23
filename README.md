@@ -15,7 +15,7 @@ AI Takım 38
 -- PharmAI --
 
 ## Ürün Tanıtım Videosu
-([![PharmAI Tanıtım Videosu](https://img.youtube.com/vi/rz_fvUvts4s/maxresdefault.jpg)](https://youtu.be/rz_fvUvts4s))
+[![PharmAI Tanıtım Videosu](https://img.youtube.com/vi/rz_fvUvts4s/maxresdefault.jpg)](https://youtu.be/rz_fvUvts4s)
 
 ## Proje Çalışma ve Backlog Sayfası
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
