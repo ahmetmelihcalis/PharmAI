@@ -17,11 +17,15 @@ AI Takım 38
 ## Ürün Videosu URL
 [AI Team 38 Video URL](https://youtu.be/rz_fvUvts4s?feature=shared)
 
+## DemoDay Sunumu URL
+
+[AI Team 38 Sunum URL](https://youtu.be/rz_fvUvts4s?feature=shared](https://drive.google.com/file/d/1BtvHE-nASXefho4otEQFdnIRz_9-dRP0/view))
+
 ## Proje Çalışma ve Backlog Sayfası URL
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
 
 ## Ürün Açıklaması
-PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri sunan, yapay zeka destekli bir ilaç bilgi platformudur.
+PharmAI, ilaçlar hakkındaki genel bilgileri, yan etkileri ve etkileşimleri sunan, yapay zeka destekli bir ilaç bilgi platformudur. Yapay Zeka ve Teknoloji Akademisi Mezuniyet Bootcamp’i kapsamında, finalist olarak seçilen 7 proje arasında yer almıştır.
 
 ## Ürün Özellikleri
 - İlaç bilgilerini özetleyen yapay zeka motoru
