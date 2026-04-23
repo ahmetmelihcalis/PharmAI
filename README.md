@@ -19,7 +19,7 @@ AI Takım 38
 
 ## DemoDay Sunumu URL
 
-[AI Team 38 Sunum URL](https://youtu.be/rz_fvUvts4s?feature=shared](https://drive.google.com/file/d/1BtvHE-nASXefho4otEQFdnIRz_9-dRP0/view))
+[AI Team 38 Sunum URL](https://drive.google.com/file/d/1BtvHE-nASXefho4otEQFdnIRz_9-dRP0/view?usp=sharing)
 
 ## Proje Çalışma ve Backlog Sayfası URL
 [AI Team 38 Notion URL](https://www.notion.so/YZTA-BOOTCAMP-219b335bd7e2802c97ffdd41cc733621?source=copy_link)
